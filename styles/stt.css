@@ -9,7 +9,7 @@
 html{
   font-family: "Cairo Play", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 12px;
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
@@ -24,7 +24,7 @@ span{
 }
 body{
   background:var(--w1);
-  width:800px;
+  width:1240px;
   height:3rem;
   margin: 1rem 0.1rem 0.3rem 0.2rem;
 }
@@ -84,7 +84,7 @@ a:active{
 }
 
 
-}
+
 .img1{
   width:90px;
   height: 70px;
@@ -152,4 +152,36 @@ input{
 }
 a{
   text-decoration: none;
+}
+#nava_getior{
+  width: 40%;
+  height: 120px;
+  box-shadow:1px 1px 2px 1px #069 ;
+  border: 1px solid gray;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 20px;
+  justify-content: center;
+  margin-top: 23px;
+  position: absolute;
+  bottom: 76%;
+  right: 750px;
+  transition: all 2s;
+  padding: 5px;
+  opacity: 1;
+  top:-100%;
+}
+
+#nava_getior .na{
+  width:50px;
+  height: 30px;
+}
+#nava_getior:hover{
+  border:1px double goldenrod;
+  color:#09f;
+  background-color: var(--w3);
+}
+#nava_getior.show{
+  opacity: 1;
+  top:5%;
 }
